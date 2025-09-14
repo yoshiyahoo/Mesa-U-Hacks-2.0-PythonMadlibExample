@@ -10,7 +10,7 @@ from themes import madlib_themes
 load_dotenv()
 client = Groq(api_key=os.getenv("GROQ_API_KEY"))
 
-
+# Useless comment
 def generate_madlib(num_words) -> (str, str, list[str]):
     # Sometimes this prompt just doesn't work. Will have to refresh it
     choice = random.choice(madlib_themes)
